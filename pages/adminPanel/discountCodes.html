@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کد تخفیف ها</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../styles/adminPanel/discountCodes.css">
+</head>
+<body>
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-dark rounded my-4 p-4 d-flex justify-content-between rtlDir flex-sm-row flex-column">
+                <div class="h4 panelBrand">پیشخوان مدیریتی ادمین</div>
+                <div class="dateInfo">
+                    <span id="panelDate" class="text-muted">1396 / 07 /55</span>
+                    <div class="text-center ltrDir" id="panelClock"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // the main section -->
+    <div class="container">
+        <div class="row rtlDir">
+            <div class="col-md-3 text-center" id="sidebarContainer">
+                <!-- // loader -->
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <div class="col-md-9 shadow-lg mt-3 text-center">
+                <div class="d-flex justify-content-between py-3 border-bottom align-items-center">
+                    <div class="h4 d-flex align-items-center">کد های تخفیف</div>
+                    <div>
+                        <button id="addDiscountCodeBtn">+</button>
+                    </div>
+                </div>
+                <div class="table-responsive m-5">
+                    <table class="table table-striped">
+                        <tr class="table-secondary">
+                            <th>کد تخفیف</th>
+                            <th>درصد تخفیف</th>
+                            <th>نفرات باقی مانده</th>
+                            <th>حذف تخفیف</th>
+                        </tr>
+                        <tbody id="discountCodesContainer">
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+
+
+
+    <script src="./../../plugins/sweetAlert2/sweetalert2.js"></script>
+    <script type="module" src="./../../scripts/adminPanel/discountCodes.js"></script>
+</body>
+</html>

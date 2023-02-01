@@ -1,0 +1,18 @@
+.mt-200{
+    margin-top: 200px;
+}
+.bg-orange{
+    background: var(--bs-orange);
+}
+.hover-link:hover{
+    text-decoration: underline !important;
+}
+.me{
+    color: #fd7e14;
+}
+.no-hover-effect:hover{
+    background: #fd7e14 !important;
+}
+#notificationLogin{
+    border-radius: 5px 0 0 5px;
+}

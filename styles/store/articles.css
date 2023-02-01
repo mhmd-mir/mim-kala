@@ -1,0 +1,49 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.articlesHead{
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #e1e0e0 inset;
+}
+.blogBox{
+    box-shadow: 1px 1px 5px #979797;
+    border-radius: 5px;
+    text-align: end;
+    background: #ffffff ;
+}
+.blogsIcon{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hover-link:hover{
+    text-decoration: underline !important;
+}
+.blogContent{
+    height: 115px;
+    overflow: hidden;
+}
+.shoesBlog{
+    height: 265px;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}

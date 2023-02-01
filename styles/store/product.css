@@ -1,0 +1,45 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.bg-orange {
+    background: var(--bs-orange);
+}
+.addComment{
+    width: 50%;
+}
+@media screen and (max-width : 992px) {
+    .addComment{
+        width: 100%;
+    }
+}
+.fillYellow{
+    fill : #ffc107 !important;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}
+.swal-text{
+    text-align: center;
+}
+.commentContent{
+    white-space: pre-line ;
+}

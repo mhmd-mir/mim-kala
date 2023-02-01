@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کاربران</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../styles/adminPanel/users.css">
+</head>
+<body>
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-dark rounded my-4 p-4 d-flex justify-content-between rtlDir flex-sm-row flex-column">
+                <div class="h4 panelBrand">پیشخوان مدیریتی ادمین</div>
+                <div class="dateInfo">
+                    <span id="panelDate" class="text-muted">1396 / 07 /55</span>
+                    <div class="text-center ltrDir" id="panelClock"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // the main section -->
+    <div class="container">
+        <div class="row rtlDir">
+            <div class="col-md-3 text-center" id="sidebarContainer">
+                <!-- // loader -->
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <div class="col-md-9 shadow-lg mt-3 text-center">
+                <div class="text-start p-3 h4 border-bottom">کاربران سایت</div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th>شماره</th>
+                                <th>نام کاربر</th>
+                                <th>ایمیل</th>
+                                <th>شماره تلفن</th>
+                                <th>حذف</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashboardContainer">
+                            <!-- <div class="spinner-border mx-auto my-5" role="status">
+                                <span class="visually-hidden"></span>
+                            </div> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+
+    <script src="./../../plugins/chartJs/chart.min.js"></script>
+    <script src="./../../plugins/sweetAlert2/sweetalert2.js"></script>
+    <script type="module" src="./../../scripts/adminPanel/users.js"></script>
+</body>
+</html>

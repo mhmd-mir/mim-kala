@@ -1,0 +1,122 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+body{
+    background: #f5f1f1;
+}
+.brand{
+    background: linear-gradient( to right, #518EFF, #518EFF, 50%, #B725FF 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.productBtn{
+    border: 1px solid #B725FF;
+    margin:0 10px;
+    padding: 10px 25px;
+}
+.loginBtn{
+    background: linear-gradient(to right, #518EFF 35%, #B725FF 88% );
+    color: #ffffff;
+    margin:0 10px;
+    padding: 10px 25px;
+}
+.loginBtn:hover{
+    color: #fff !important;
+}
+.productBtn:hover{
+    border: 1px solid #B725FF !important;
+}
+.rotate180{
+    transform: rotateY(180deg);
+}
+.advantageIcon i{
+    font-size: 3.5rem;
+    color: #ff7e74;
+}
+.advantageTitle{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.text-gradiant{
+    background: linear-gradient( to right, #518EFF, #518EFF, 49%, #B725FF 51%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.productBox{
+    box-shadow: 1px 1px 5px #a7a7a7;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    background: #ffffff;
+}
+.productTitle{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.productPrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 0 10px;
+}
+.bg-orange{
+    background: var(--bs-orange);
+}
+.bg-orange:hover{
+    background: var(--bs-orange) !important;
+}
+.bg-pen{
+    background: #003865 !important;
+}
+.blogBox{
+    box-shadow: 1px 1px 5px #979797;
+    border-radius: 5px;
+    text-align: end;
+    background: #ffffff ;
+}
+.blogsIcon{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hover-link:hover{
+    text-decoration: underline !important;
+}
+.blogContent{
+    height: 115px;
+    overflow: hidden;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}
+@media screen and (max-width : 992px) {
+    .headerSection{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,31 @@
+*{
+    font-family: vazir;
+}
+.nav-item:hover{
+    border-bottom: 2px solid #941ac6;
+}
+#cart{
+    width: 30px;
+    height: 30px;
+    fill: #b725ff;
+}
+.posSticky{
+    background: #e2cece;
+    position: sticky;
+    top: 0;
+    z-index: 2 ;
+}
+@media screen and (max-width : 992px) {
+    .collapse:not(.show) {
+        display: block;
+    }
+    .navbar-nav.me-auto.mb-2.mb-lg-0.ms-4{
+        display: none;
+    }
+    .nowrap{
+        flex-wrap: nowrap !important;
+    }
+}
+.staticHeight{
+    height: 72px;
+}

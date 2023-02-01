@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./../../styles/store/products.css">
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+</head>
+<body>
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+    <!-- // header section -->
+    <div class="container">
+        <div class="text-center my-5 py-5 contact">
+            <div class="display-4">محصولات</div>
+            <div>
+                <a href="./products.html" class="d-inline-block py-2 px-2 text-decoration-none text-dark">محصولات</a>
+                <a href="./index.html" class="d-inline-block py-2 px-2 text-decoration-none border-end">خانه</a>
+            </div>
+            <div class="searchProduct p-3">
+                <input placeholder="جست و جو" type="text" id="searchProductInput" class="w-100">
+                <button id="searchProductButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                     </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- // products -->
+    <div class="container mt-200">
+        <div class="row" id="products">
+            <div class="spinner-border mx-auto my-5" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+            <div class="text-center">درحال خواندن اطلاعات از سرور</div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+    <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+    <script type="module" src="./../../scripts/store/products.js"></script>
+</body>
+</html>

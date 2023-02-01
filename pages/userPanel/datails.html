@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سفارشات</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../styles/userPanel/orders.css">
+</head>
+<body>
+    <site-navbar data-position="userPanel">
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-dark rounded my-4 p-4 d-flex justify-content-between rtlDir flex-sm-row flex-column">
+                <div class="h4 panelBrand">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp جزییات حساب &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+                <div class="dateInfo">
+                    <span id="panelDate" class="text-muted">1396 / 07 /55</span>
+                    <div class="text-center ltrDir" id="panelClock"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // main section -->
+    <div class="container">
+        <div class="row rtlDir">
+            <div class="col-md-3 border rounded text-center shadow" id="sidebarContainer">
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <div class="col-md-9 text-center" id="datailsContainer">
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+    <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+    <script src="./../../plugins/sweetAlert2/sweetalert2.js"></script>
+    <script type="module" src="./../../scripts/userPanel/datails.js"></script>
+</body>
+</html>

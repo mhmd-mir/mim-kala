@@ -1,0 +1,88 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+.contact {
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #e1e0e0 inset;
+}
+.searchProduct{
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+#searchProductInput{
+    direction: rtl;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 3px solid silver;
+    outline: none;
+    box-shadow: 1px 1px 10px #d0d0d0 inset;
+}
+#searchProductButton{
+    padding: 0.5rem;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    border: 1px solid #c1c0c0;
+    background: #198754;
+    border-right: 0;
+}
+#searchProductButton svg{
+    fill : #fff ;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.productBox{
+    box-shadow: 1px 1px 5px #a7a7a7;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    background: #ffffff;
+}
+.productTitle{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.productPrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 0 10px;
+}
+.bg-orange{
+    background: var(--bs-orange) !important;
+}
+.bg-orange:hover{
+    background: var(--bs-orange) !important;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}

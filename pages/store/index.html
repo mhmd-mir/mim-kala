@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../icon/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./../../styles/store/index.css">
+</head>
+<body>
+   
+   <!-- // navbar-section -->
+        <site-navbar>
+            <div slot="cartCount" id="cartCount">
+                <span  class="badge bg-danger cartAlert rounded-circle"></span>
+            </div>
+        </site-navbar>
+   <!-- // header section -->
+   <div class="container-fluid mt-100 pt-5 headerSection">
+    <div class="row text-start">
+        <div class="col-lg-5 order-lg-0 order-1">
+            <img src="./../../images/shoesHeader.png" alt="shoes" class="img-fluid rotate180">
+        </div>
+        <div class="col-lg-6 p-3 d-flex justify-content-center  flex-column">
+           <div class="display-4">با کیفیت ترین کفش های بازار را بصورت انلاین از  <span class="brand"> میم کالا </span>  بخرید</div>
+           <div class='mt-3'><p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p></div>
+            <div class="mt-4">
+                <a href="./products.html" class="btn productBtn">محصولات</a>
+                <a href="./sign.html" class="btn loginBtn">ورود و ثبت نام</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- // why us section -->
+   <div class="container mt-100 pt-5">
+    <div class="text-center h2 fw-bolder">چرا میم کالا؟</div>
+    <div class="row text-center mt-5">
+        <div class="col-md-4 mt-3">
+            <div>
+                <div class="advantageIcon"><i class="fa-solid fa-sack-dollar"></i></div>
+                <div class="advantageTitle">بهترین قیمت</div>
+                <div><p  class="px-3 text-muted text-start">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p></div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div>
+                <div class="advantageIcon"><i class="fa-solid fa-truck"></i></div>
+                <div class="advantageTitle">تحویل فوری</div>
+                <div><p class="px-3 text-muted text-start">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p></div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div>
+                <div class="advantageIcon"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="advantageTitle">بازپرداخت سریع</div>
+                <div><p  class="px-3 text-muted text-start">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p></div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- // products -->
+   <div class="container mt-200">
+        <!-- // title -->
+        <div class="text-center  w-50 mx-auto mt-5">
+            <div class="text-gradiant">محصولات</div>
+            <div class="h2 my-2">پرطرفدار ترین کفش ها</div>
+            <p class="text-muted">خیلی راحت سفارشت رو ثبت کن و به بقیه کارهایی که داری برس تجربه‌‌ی خرید آسان کفش همراه با خدماتی ویژه و ارسال رایگان در مناطق مختلف رو  تجربه</p>
+        </div>
+        <!-- // popular products -->
+        <div class="products">
+            <div class="row" id="products">
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+                <div class="text-center">درحال خواندن اطلاعات از سرور</div>
+            </div>
+        </div>
+        <!-- // btn show more -->
+        <div class="mt-3 pt-3 text-center">
+            <div class="row">
+                <div class="col-lg-5 mx-auto mb-5">
+                    <a href="./products.html" class="btn bg-pen text-white px-5">مشاهده همه محصولات</a>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- // about us -->
+   <div class="container-fluid mt-200">
+    <div class="row">
+        <div class="col-lg-6 text-center p-3">
+            <img onclick="addToCartHandler(2)" width="650" src="./../../images/aboutUs.jpg" alt="mimkala factory" class="rounded img-fluid">
+        </div>
+        <div class="col-lg-5 text-center mt-lg-0 mt-5 text-lg-start">
+            <div class="h2 fw-bolder">درباره ما</div>
+            <div class="h2 mt-3">
+                ما در 
+                <span class="brand">میم کالا</span>
+            </div>
+            <div>
+                <p class="text-muted px-lg-0 px-4">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها
+                </p>
+            </div>
+            <div>
+                <a href="./about.html" class="btn bg-pen text-white px-5">بیشتر بدانید</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- // blogs -->
+   <div class="container mt-200">
+        <!-- // title -->
+        <div class="text-center">
+            <div class="text-gradiant">خواندنی ها</div>
+            <div class="h2 my-2">پربازدید ترین مطالب</div>
+            <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+        </div>
+        <div class="mt-5">
+            <div class="row" id="blogs">
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+                <div class="text-center">درحال خواندن اطلاعات از سرور</div>
+            </div>
+        </div>
+        <div class="mt-3 pt-3 text-center">
+            <div class="row">
+                <div class="col-lg-5 mx-auto mb-5">
+                    <a href="./articles.html" class="btn bg-pen text-white px-5">مشاهده همه مطالب</a>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- // clients -->
+   <!-- <div class="container-fluid mt-100">
+        <div class="row">
+            
+        </div>
+   </div> -->
+   <!-- // footer section -->
+   <site-footer></site-footer>
+
+
+   <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+    function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+    </script> -->
+   <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./../../scripts/store/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوالات</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./../../styles/adminPanel/questions.css">
+</head>
+<body>
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-dark rounded my-4 p-4 d-flex justify-content-between rtlDir flex-sm-row flex-column">
+                <div class="h4 panelBrand">پیشخوان مدیریتی ادمین</div>
+                <div class="dateInfo">
+                    <span id="panelDate" class="text-muted">1396 / 07 /55</span>
+                    <div class="text-center ltrDir" id="panelClock"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- // the main section -->
+    <div class="container">
+        <div class="row rtlDir">
+            <div class="col-md-3 text-center" id="sidebarContainer">
+                <!-- // loader -->
+                <div class="spinner-border mx-auto my-5" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <div class="col-md-9 shadow-lg mt-3 text-center">
+                <div class="d-flex justify-content-between py-3 border-bottom align-items-center">
+                    <div class="h4 d-flex align-items-center">سوالات کاربران</div>
+                </div>
+                <div class="row my-3 text-center" id="messageContainer">
+                    <!-- // loader -->
+                    <div class="spinner-border mx-auto my-5" role="status">
+                        <span class="visually-hidden"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <site-footer></site-footer>
+    <script src="./../../plugins/sweetAlert2/sweetalert2.js"></script>
+    <script type="module" src="./../../scripts/adminPanel/questions.js"></script>
+</body>
+</html>

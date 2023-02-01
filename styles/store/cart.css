@@ -1,0 +1,51 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.cartAlert {
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.dirRtl{
+    direction: rtl;
+}
+.midVertical{
+    vertical-align: middle;
+}
+.removeProductFromCart{
+    cursor: pointer;
+}
+#addCopenBtn{
+    left: 0;
+    border-radius: 5px 0 0 5px !important;
+}
+.noWrapWhiteSpace{
+    white-space:nowrap;
+}
+.swal-modal{
+    direction: rtl;
+}
+.swal-text{
+    text-align: center;
+}
+.customSize{
+    width: 1rem;
+    height: 1rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../styles/store/sign.css" />
+</head>
+<body>
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+
+    <div class="container mt-100">
+        <div class="text-center">
+            <span class="loginBrand  h1">ثبت نام در میم کالا</span>
+        </div>
+        <div class="text-center mt-5">
+            <p class="text-muted w-50 mx-auto">اطلاعات خود را وارد کنید تا برای شما در میم کالا حساب کاربری ایجاد شود</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-100 border p-5 rounded">
+                <div class="rtlDir">
+                    <input type="text" placeholder="نام کاربری خود را وارد کنید" class="rtlDir  singInputs form-control mb-3" id="usernameInput" data-validate="username">
+                    <input type="email" placeholder="ایمیل خود را وارد کنید" class="rtlDir  singInputs form-control mb-3" id="emailInput" data-validate="email">
+                    <input type="text" placeholder="شماره موبایل خود را وارد کنید" class=" singInputs rtlDir form-control mb-3" id="phoneInput" data-validate="phone">
+                    <input type="password" placeholder="رمز عبور خود را وارد کنید" class=" singInputs form-control mb-3" id="passwordInput" data-validate="password">
+                    <button class="btn bg-info text-white w-100" id="registerBtn">ثبت نام</button>
+                </div>
+                <div class="redirectToSign rtlDir mt-2">
+                    <a href="./login.html" class="text-decoration-none">حساب کاربری دارید؟وارد شوید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <site-footer></site-footer>
+
+    <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+    <script type="module" src="./../../scripts/store/sign.js"></script>
+</body>
+</html>

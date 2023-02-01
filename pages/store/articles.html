@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خواندنی ها</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../icon/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./../../styles/store/articles.css">
+</head>
+<body>
+    <!-- // navbar -->
+    <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+    </site-navbar>
+    <!-- // header -->
+    <div class="container">
+        <div class="text-center my-5 py-5 articlesHead">
+            <div class="display-4">خواندنی ها</div>
+            <div>
+                <a href="./articles.html" class="d-inline-block py-2 px-2 text-decoration-none text-dark">خواندنی ها</a>
+                <a href="./index.html" class="d-inline-block py-2 px-2 text-decoration-none border-end">خانه</a>
+            </div>
+        </div>
+    </div>
+    <!-- // articles -->
+    <div class="container">
+        <div class="row" id="articlesContainer">
+            <div class="spinner-border mx-auto my-5" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+            <div class="text-center">درحال خواندن اطلاعات از سرور</div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+    <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+    <script type="module" src="./../../scripts/store/articles.js"></script>
+</body>
+</html>

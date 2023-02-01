@@ -1,0 +1,31 @@
+@font-face {
+    font-family: vazir;
+    src: url('./../../font/Vazirmatn-Regular.ttf');
+}
+*{
+    font-family: vazir;
+}
+.swal-text{
+    text-align: right;
+}
+.swal-button{
+    padding: 10px 50px;
+}
+.swal-footer{
+    text-align: center;
+}
+.articleTitle{
+    box-shadow: 1px 1px 5px #828282 inset;
+    padding: 1rem;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+.articleContent{
+    line-height: 30px;
+}
+.cartAlert{
+    padding: 4px 7px;
+    position: absolute;
+    bottom: 0px;
+    right: -14px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./../../styles/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./../../styles/store/cart.css">
+</head>
+<body>
+   <site-navbar>
+        <div slot="cartCount" id="cartCount">
+            <span  class="badge bg-danger cartAlert rounded-circle"></span>
+        </div>
+   </site-navbar>
+   <div class="container dirRtl">
+        <div class="p-3 pb-0 mt-5 text-center h3">سبد خرید شما</div>
+        <div class="text-center text-muted" id="productCounter">
+            محصولی در سبد خرید شما وجود ندارد
+        </div>
+   </div>
+   <div class="container mt-100 dirRtl">
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table table-hover noWrapWhiteSpace">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>محصول</th>
+                        <th>قیمت</th>
+                        <th>تعداد</th>
+                        <th>جمع نهایی</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody id="userCartProducts">
+                    <!-- <tr class="midVertical">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="mx-2">
+                                    <img width="75" src="./../../images/shoes1.jpg" class="img-fluid rounded border"/>
+                                </div>
+                                <div class="mx-2">
+                                    <p class="mb-0 h5">کفش مردانه مدل اریک</p>
+                                    <span class="badge bg-danger my-2">15%</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="h5 text-muted">198000</td>
+                        <td>
+                            <input type="number" width="50" min="1" max="10" value="1">
+                        </td>
+                        <td class="h5 text-muted">128888</td>
+                        <td>
+                            <svg class="removeProductFromCart" xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="rgb(220,53,69)" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="midVertical">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="mx-2">
+                                    <img width="75" src="./../../images/shoes2.jpg" class="border img-fluid rounded"/>
+                                </div>
+                                <div class="mx-2">
+                                    <p class="mb-0 h5">کفش مردانه مدل سانسا</p>
+                                    <span class="badge bg-danger my-2">40%</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="h5 text-muted">255000</td>
+                        <td>
+                            <input type="number" width="50" min="1" max="10" value="1">
+                        </td>
+                        <td class="h5 text-muted">255000</td>
+                        <td>
+                            <svg class="removeProductFromCart" xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="rgb(220,53,69)" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="midVertical">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="mx-2">
+                                    <img width="75" src="./../../images/shoes3.jpg" class="border img-fluid rounded"/>
+                                </div>
+                                <div class="mx-2">
+                                    <p class="mb-0 h5">کفش مردانه مدل نارسیس</p>
+                                    <span class="badge bg-danger my-2">28%</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="h5 text-muted">544000</td>
+                        <td>
+                            <input type="number" width="50" min="1" max="10" value="1">
+                        </td>
+                        <td class="h5 text-muted">544000</td>
+                        <td>
+                            <svg class="removeProductFromCart" xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="rgb(220,53,69)" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </div>
+   <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5 border dirRtl p-3">
+            <div class="d-flex justify-content-between border-bottom my-2 py-2">
+                <div class="h5">جمع نهایی سبد خرید</div>
+                <span class="text-muted h5" id="holeProductPrice"></span>
+            </div>
+            <div class="border-bottom my-2 py-2 position-relative">
+                <button class="btn btn-warning position-absolute" id="addCopenBtn">اعمال کد</button>
+                <input type="text" class="form-control" placeholder="کد تخفیف را وارد کنید" id="copenInput"/>
+            </div>
+            <div class="d-flex justify-content-between border-bottom my-2 py-2">
+                <div class="h5">قیمت نهایی</div>
+                <span class="display-5 text-muted" id="finallyPrice"></span>
+            </div>
+            <div>
+                <button class="btn btn-info w-100" id="buyOrders">پرداخت</button>
+            </div>
+        </div>
+    </div>
+   </div>
+    <site-footer></site-footer>
+    <script src="./../../plugins/sweetAlert/sweetalert.min.js"></script>
+    <script type="module" src="./../../scripts/store/cart.js"></script>
+</body>
+</html>
